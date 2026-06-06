@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header>h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .input-1 {
+            width: 20vw;
+            height: 4vh;
+            border: 3px solid rgb(0, 0, 168);
+            border-radius: 10px;
+        }
+
+        h5 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            margin-top: 35px;
+            color: rgb(0, 0, 168);
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        form {
+            width: 30vw;
+            height: 90vh;
+            border: 2px solid grey;
+            border-radius: 20px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            display: block;
+            text-align: center;
+            border: 3px solid rgb(0, 0, 168);
+            width: 7vw;
+            height: 5vh;
+            border-radius: 5px;
+            background-color: rgb(0, 0, 168);
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        #line{
+            color: rgb(60, 60, 255);
+        }
+        #sign-up-link{
+            color: rgb(0, 0, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <main>
+        <section id="signup-form-section">
+            <form action="" method="post">
+                <h5>Email:</h5>
+                <input type="email" placeholder="expamle@email.com" required class="input-1">
+                <h5>Password:</h5>
+                <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@!#$%&]).{10,}$"
+                    placeholder="Enter Strong Password" required class="input-1"
+                    title="Enter Strong Password such as(minium one letter {a-z} minimum one letter {A-Z} minimum one number {0-9} minimum one special character {@!#$%&} and password maximum 10letters)">
+                <button>Log in</button>
+                <div id="line">You have didn't account, <a href="./signup.html" id="sign-up-link">Sign Up</a></div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

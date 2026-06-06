@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(25, 50, 163);
+    text-shadow: 5px 3px 3px rgba(0, 70, 82, 0.514);
+}
+
+#div1 {
+    text-transform: capitalize;
+    font-family: "Playwrite GB J", cursive;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        input{
+            width: 350px;
+            height: 40px;
+            border: 2px solid rgb(0, 0, 126);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        input::placeholder{
+            text-align: center;
+            font-weight: bold;
+        }
+        button{
+            margin-top: 15px;
+            height: 40px;
+            width: 250px;
+            background-color: rgb(0, 0, 126);
+            color: rgb(226, 226, 226);
+            border: 2px solid rgb(0, 0, 126);
+            border-radius: 8px;
+            font-weight: 800;
+        }
+        button:hover{
+            background-color: rgb(226, 226, 226);
+            color: rgb(0, 0, 126);
+        }
+    </style>
+</head>
+<body>
+    <form action="./cv.html" method="post">
+        <input type="email" name="fileName" placeholder="Enter your email" required>
+        <br>
+        <input type="password" name="password" placeholder="Enter your Password" required>
+        <br>
+        <input type="number">
+        <br>
+        <input type="checkbox" name="" id="">
+        <br>
+        <input type="radio" name="" id="">
+        <br>
+        <input type="text" pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}$" size="50" placeholder="Enter Cnic Number" title="Correct format with dashed">
+        <br>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#^&!]).{9,}$" title="Enter strong password like requested format">
+        <br>
+        <input type="range">
+        <br>
+        <input type="color" name="" id="">
+        <br>
+        <input type="date" name="" id="">
+
+        <br>
+        <button>Login</button>
+    </form>
+</body>
+</html>

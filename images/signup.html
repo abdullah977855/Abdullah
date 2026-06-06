@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header>h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .input-1 {
+            width: 20vw;
+            height: 4vh;
+            border: 3px solid rgb(0, 0, 168);
+            border-radius: 10px;
+        }
+
+        h5 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            margin-top: 35px;
+            color: rgb(0, 0, 168);
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        form {
+            width: 30vw;
+            height: 90vh;
+            border: 2px solid grey;
+            border-radius: 20px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            display: block;
+            text-align: center;
+            border: 3px solid rgb(0, 0, 168);
+            width: 7vw;
+            height: 5vh;
+            border-radius: 5px;
+            background-color: rgb(0, 0, 168);
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        #line {
+            color: rgb(60, 60, 255);
+        }
+
+        #sign-up-link {
+            color: rgb(0, 0, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <main>
+        <section id="signup-form-section">
+            <form action="./successful-signuppage.html" method="post">
+                <h5>Name:</h5>
+                <input type="text" placeholder="Enter your Name" required class="input-1">
+                <h5>Email:</h5>
+                <input type="email" placeholder="expamle@email.com" required class="input-1">
+                <h5>Date of Birth:</h5>
+                <input type="date" class="input-1">
+                <h5>Password:</h5>
+                <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@!#$%&]).{10,}$"
+                    placeholder="Enter Strong Password" class="input-1" required
+                    title="Enter Strong Password such as(minium one letter {a-z} minimum one letter {A-Z} minimum one number {0-9} minimum one special character {@!#$%&} and password maximum 10letters)">
+                <h5>NIC Number:</h5>
+                <input type="number" pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}$" placeholder="example:01010-4578663-5"
+                    title="Enter NIC number as per format (01010-4578663-5)" required class="input-1">
+                <h5>Nationality:</h5>
+                <input type="radio" name="nationality" value="pakistani" id="pakistani" class="input-2">
+                <label for="pakistani">Pakistani</label>
+                <input type="radio" name="nationality" id="no-pakistani" value="no-pakistani" class="input-2">
+                <label for="no-pakistani">no-Pakistani</label>
+                <h5>Courses:</h5>
+                <input type="checkbox" name="courses" id="wma" value="wma" class="input-2">
+                <label for="wma">Web & App Developmwnt</label>
+                <br>
+                <input type="checkbox" name="courses" id="ccna" value="ccna" class="input-2">
+                <label for="ccna">CCNA</label>
+                <br>
+                <input type="checkbox" name="courses" id="coc" value="coc" class="input-2">
+                <label for="coc">COC</label>
+                <button>Sign Up</button>
+                <div id="line">You have an account, <a href="./loginpage.html" id="log-in-link">Log In</a></div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

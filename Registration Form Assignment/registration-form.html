@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Registration Form</title>
+    <style>
+        header,
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            background-color: rgb(204, 204, 204);
+            height: 75vh;
+            width: 35vw;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #button {
+            text-align: center;
+        }
+
+        span,
+        label {
+            font-size: 18px;
+        }
+
+        span {
+            margin-right: 50px;
+            margin-left: 20px;
+
+        }
+
+        .group-1 {
+            height: 19px;
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./images/images.png" alt="Saylani-Welfare-International-Trust">
+        <h1>Saylani Online Academy</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Student Registration Form</h2>
+            <form action="./registration-form-successful.html">
+                <span>Name:</span>
+                <input type="text" placeholder="Name" required class="group-1">
+                <br>
+                <br>
+                
+                <span>Father Name:</span>
+                <input type="text" placeholder="Father Name" required class="group-1">
+                <br>
+                <br>
+                <span>Password</span>
+                <input type="password" placeholder="*******" required class="group-1" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#^&!]).{9,}$">
+                <br>
+                <br>
+                <span>Address</span>
+                <textarea name="" id="" cols="15" rows="4"></textarea>
+                <br>
+                <br>
+                <span>Gender:</span>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <br>
+                <br>
+                <span>Language:</span>
+                <input type="checkbox" name="language" id="urdu" value="urdu">
+                <label for="urdu">Urdu</label>
+                <input type="checkbox" name="language" id="" value="english">
+                <label for="">English</label>
+                <input type="checkbox" name="language" id="" value="arabic">
+                <label for="">Arabic</label>
+                <input type="checkbox" name="language" id="" value="chinese">
+                <label for="">Chinese</label>
+                <br>
+                <br>
+                <span>DOB</span>
+                <input type="date" class="group-1" required>
+                <br>
+                <br>
+                <span>Email Id:</span>
+                <input type="email" name="" id="" placeholder="Email ID" required class="group-1">
+                <br>
+                <br>
+                <span>Mobile Number:</span>
+                <input type="tel" name="" id="" placeholder="Mobile Number" required class="group-1">
+                <br>
+                <br>
+                <span>City:</span>
+                <select name="cities" id="">
+                    <option value="karachi">Karachi</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="nawabshah">Nawabshah</option>
+                    <option value="larkana">Larkana</option>
+                    <option value="sukkur">Sukkur</option>
+                </select>
+                <br>
+                <br>
+                <span>Hobbies:</span>
+                <select name="hobbies" id="">
+                    <option value="cricket">Cricket</option>
+                    <option value="hockey">Hockey</option>
+                    <option value="football">Football</option>
+                    <option value="tennis">Tennis</option>
+                </select>
+                <br>
+                <br>
+                <span>Picture Upload:</span>
+                <input type="file" name="" id="">
+                <br>
+                <br>
+                <input type="submit" value="Submit Form" id="button">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

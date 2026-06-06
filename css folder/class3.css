@@ -1,0 +1,84 @@
+.cards{
+    border: 4px solid black;
+    height: 250px;
+    width: 15vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+#card-container{
+    height: 75vh;
+    display: flex;
+}
+.cards > img{
+    height: 50px;
+    width: 50px;
+}
+
+.cards>button{
+
+}
+/* input{
+
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+}
+
+input:hover{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+input:focus{
+    font-size: 25px;
+    color: white;
+    background-color: cadetblue;
+}
+
+button{
+    width: 130px;
+    height: 50px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+button:active{
+    background-color: burlywood;
+    color: black;
+    font-size: 25px;
+}
+
+#div1{
+    width: 600px;
+    background-color: bisque;
+    min-height: 25px;
+    max-height: 150px;
+    overflow: scroll;
+}
+
+#div2{
+    background-color: rgb(180, 255, 230);
+    height: 500px;
+    width: 50vw;
+    border-width: 10px 10px 10px 10px;
+    border-style: dashed dotted double ridge;
+    border-color: rgb(0, 62, 90);
+}
+
+img{
+    width: 50vw;
+    border-radius: 50%;
+}
+
+img:hover{
+    box-shadow: 10px 10px 100px rgb(122, 6, 6);
+} */

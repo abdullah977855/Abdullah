@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(153, 207, 255);
+}
+
+.form-styling {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.form-styling input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgb(255, 252, 252);
+}
+
+form {
+    width: 700px;
+    margin: auto;
+}
+
+.form-styling input:focus {
+    border-color: rgb(0, 86, 162);
+    box-shadow: 10px 10px 80px whitesmoke;
+}
+
+.prefix, #suffix {
+    position: absolute;
+    top: 30%;
+}
+
+#prefix1 {
+    position: absolute;
+    top: 45%;
+}
+
+.prefix{
+    left: 15px;
+}
+
+#suffix{
+    right: 15px;
+}

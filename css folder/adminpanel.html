@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="adminpanel.css">
+</head>
+
+<body>
+    <header>
+        <div id="headings">
+            <h1>Admin Dashboard</h1>
+            <div id="avatar">
+                <img src="https://img.magnific.com/free-vector/user-blue-gradient_78370-4692.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="User Image">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="side-bar">
+            <a href="#">🏠Home</a>
+            <a href="#">📦Order</a>
+            <a href="#">🛒Product</a>
+            <a href="#">👥Customer</a>
+            <a href="#">⚙Setting</a>
+            <a href="#">🚪Logout</a>
+        </div>
+        <h1>Dashboard</h1>
+        <div id="cards-container">
+            <div class="card">
+                <h3>Total Orders</h3>
+                <div>125</div>
+            </div>
+            <div class="card">
+                <h3>Pending Order</h3>
+                <div>10</div>
+            </div>
+            <div class="card">
+                <h3>Complete Order</h3>
+                <div>115</div>
+            </div>
+            <div class="card">
+                <h3>Total User</h3>
+                <div>200+</div>
+            </div>
+            <div class="card">
+                <h3>Total Product</h3>
+                <div>250+</div>
+            </div>
+        </div>
+        <div id="table-container">
+            <h2>Recent Orders</h2>
+            <table>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Customer</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>#121</td>
+                    <td>Kashif</td>
+                    <td>$150</td>
+                    <td class="pending">Pending</td>
+                </tr>
+                <tr>
+                    <td>#122</td>
+                    <td>Danish</td>
+                    <td>$250</td>
+                    <td class="complete">Complete</td>
+                </tr>
+                <tr>
+                    <td>#123</td>
+                    <td>Daniyal</td>
+                    <td>$150</td>
+                    <td class="cancel">Cancel</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

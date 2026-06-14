@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#headings>h1 {
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+header>#avatar {}
+
+#headings {
+    height: 9vh;
+    width: 100vw;
+    background-color: rgba(30, 83, 181, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+#avatar>img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#side-bar {
+    width: 220px;
+    height: calc(100vh - 9vh);
+    background-color: rgba(30, 83, 181, 94%);
+    position: fixed;
+    top: 9vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-bar>a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#side-bar>a:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#side-bar>a:hover {
+    background-color: rgba(134, 177, 255, 0.94);
+}
+
+#side-bar>a:last-child:hover {
+    background-color: rgba(57, 85, 137, 0.94);
+}
+
+main {
+    margin-top: 9vh;
+    margin-left: 250px;
+    padding: 30px;
+}
+
+#cards-container {
+    /* width: 600px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 15vw;
+    height: 10vh;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 15px;
+    border: 4px solid rgb(220, 220, 220);
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgba(57, 85, 137, 0.94);
+}
+
+#table-container {
+    margin-top: 50px;
+    width: 70vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(57, 85, 137, 0.94);
+    border: 4px solid rgb(220, 220, 220);
+
+}
+
+#table-container>table {
+    width: 100%;
+    height: 80%;
+}
+
+th,
+td {
+    border: 1px solid rgb(105, 105, 105);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.pending{
+    color: yellow
+}
+
+.complete{
+    color: green
+}
+
+.cancel{
+    color: red
+}

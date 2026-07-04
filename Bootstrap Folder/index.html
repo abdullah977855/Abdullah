@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        .card {
+            cursor: pointer;
+            transition: all 1s;
+        }
+
+        .card:hover {
+            box-shadow: 8px 8px 10px rgb(62, 62, 255);
+            transform: translateY(-8px);
+        }
+
+        nav .btn {
+            color: rgb(78, 104, 255) !important;
+            border-color: rgb(78, 104, 255) !important;
+            background-color: white !important;
+        }
+
+        nav .btn:hover {
+            color: rgb(78, 104, 255) !important;
+            background-color: white !important;
+        }
+
+        .navbar {
+            background-color: rgb(78, 104, 255) !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgb(135, 135, 135);
+        }
+
+        #logo-of-website {
+            height: 40px;
+            width: 48px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://img.favpng.com/22/12/19/web-page-world-wide-web-website-internet-logo-png-favpng-56JhDBu1frEDMakzkv63TuQKM.jpg"
+                    alt="" id="logo-of-website"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success bg-primary" type="submit">Search</button>
+                    <button class="btn btn-primary ml-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Signup</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/92172352/photo/an-up-close-view-of-a-package-of-several-cigarettes.jpg?s=612x612&w=0&k=20&c=CLuOBWV4J3lK1CDD-Cg6eUKwvzIXHk-EtZqvTd2Fkbk="
+                        class="card-img-top" alt="Pepsi Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Some quick example text to build on the Pepsi and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

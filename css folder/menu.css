@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(75, 88, 111);
+    text-align: center;
+    /* height: 12vh; */
+}
+
+nav > ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+nav > ul > li{
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+}
+
+nav > ul > li > a,a{
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li:hover{
+    background-color: rgb(68, 68, 209);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sub-menu1{
+    display: none;
+}
+
+header ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+}
+
+header ul li:hover .sub-menu1 ul{
+    display: block;
+    list-style: none;
+    margin-top: 20px;
+}
+header ul li:hover .sub-menu1 ul li{
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(75, 88, 111);
+    margin-left: -10px;
+    border-radius: 8px;
+}
+
+header ul li:hover .sub-menu1 ul li:hover{
+    background-color: rgb(68, 68, 209);
+}
+
+
+.sub-menu2{
+    display: none;
+}
+
+.sub-menu1 ul li:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    margin-left: 202px;
+    margin-top: -48px;
+}
+
+.sub-menu3{
+    display: none;
+}
+
+.sub-menu1 ul li:hover .sub-menu3{
+    display: block;
+    position: absolute;
+    margin-left: 202px;
+    margin-top: -91px;
+}
+
+.sub-menu4{
+    display: none;
+}
+
+.sub-menu1 ul li:hover .sub-menu4{
+    display: block;
+    position: absolute;
+    margin-left: 202px;
+    margin-top: -134px;
+}

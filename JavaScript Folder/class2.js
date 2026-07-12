@@ -40,3 +40,7 @@ var leftTwentyNotes = leftFiftyNotes % 20;
 var tenNotes = Math.floor(leftTwentyNotes / 10).toFixed(0);
 var leftTenNotes = leftTwentyNotes % 10;
 console.log("\n Five Thousands Rupees : " + fiveThousandsNotes + "\n Thousands Rupees : " + thousandsNotes + "\n Five Hundred Rupees : " + fiveHundredsNotes + "\n Hundred Rupees : " + hundredsNotes + "\n Fifty Rupees : " + fiftyNotes + "\n Twenty Rupees : " + twentyNotes + "\n Ten Rupees : " + tenNotes + "\n Remaining rupees : " + leftTenNotes);
+
+
+
+// Assignment Link https://drive.google.com/drive/folders/12uzF4YvKxnRjQxmplIBF_cxOCu9geO1U

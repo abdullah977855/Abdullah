@@ -1,0 +1,15 @@
+var userName;
+var myName = "Jhone Doe";
+var message = "Hello World";
+var age = 15;
+var email = "example@example.com";
+var book = "A smarter way to learn JavaScript";
+var pizza = "PIZZA \n PIZZ \n PIZ \n PI \n P";
+alert(message);
+alert(myName);
+alert(age + " years old");
+alert("Certified Mobile Application Development");
+alert(pizza);
+alert("My email address is" + email);
+alert("I am trying to learn from a Book" + book);
+document.write("Yah! I can write HTML content through JavaScript");

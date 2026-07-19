@@ -1,1 +1,14 @@
 Concatenation / Plus, Coma inme frq ye kia hy usage
+
+var
+value reasign not update
+redeclaration
+reasign
+reasign vs redeclaration
+what is update
+
+const
+not change
+
+reasignment is allowed to var, let
+redeclaration is allowed to var

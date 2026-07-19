@@ -13,3 +13,4 @@ not change
 reasignment is allowed to var, let
 redeclaration is allowed to var
 hoisting
+scoping

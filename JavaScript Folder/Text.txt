@@ -1,16 +1,28 @@
-Concatenation / Plus, Coma inme frq ye kia hy usage
+Concatenation / Plus, Coma inme frq ye kia hy usage?
+Aapko kab konsa istemal karna chahiye?Agar sirf text (strings) ko jorna hai, to + use karein.Agar code ko check karna hai (debugging) ya objects/arrays ko print karna hai, to hamesha , use karei
 
-var
-value reasign not update
-redeclaration
-reasign
-reasign vs redeclaration
-what is update
 
-const
-not change
+Hamesha const use karein: Agar aap ko pata hai ke is variable ki value poore code mein kabhi nahi badlegi (jaise URL, Config keys, ID).let tab use karein: Jab aap ko pata ho ke value baad mein badalni padegi (jaise loops ke counters ya kisi function ka score).
 
-reasignment is allowed to var, let
-redeclaration is allowed to var
-hoisting
-scoping
+Scope:
+1. Scope (Istemal ki had)Scope ka matlab hai ke aapka variable code mein kahan tak zinda hai aur kahan access ho sakta hai.var (Function Scope): Yeh block ({}) ko nahi manta. Agar yeh kisi if ya loop ke andar hai, tab bhi bahar access ho jata hai. Sirf function ke andar band hota hai.let aur const (Block Scope): Yeh sirf us curly bracket {} ke andar zinda rehte hain jahan inhein banaya gaya ho.
+
+
+Redeclaration
+2. Redeclaration (Dubara banana)Ek hi naam ka variable usi jagah dubara banana.var: Izazat deta hai. Aap ek hi naam ka variable baar baar bana sakte hain, purana wala overwrite ho jayega.let aur const: Sakhti se mana karte hain. Ek naam ka variable ek scope mein sirf ek hi baar ban sakta hai.
+
+
+Reassignment:
+Variable banaye bina sirf uski andar ki value badalna.var aur let: Izazat dete hain. Aap jab chahein value badal sakte hain.const (Constant): Name se hi zahir hai. Iski value ek baar set ho jaye to dubara tabdeel nahi ho sakti.
+
+Hoisting:
+. Hoisting (Upar Uthna)JavaScript ka ek rule hai: "Code chalne se pehle, woh poore page mein se saare variables ke naamon ko dhoond kar sab se upar le jati hai." Is upar uthane ke amal ko Hoisting kehte hain.Isay ek asan kahani se samajhte hain.var ki hoisting (Chor tareeqa):Farz karein aap ne abhi variable banaya nahi, lekin pehle hi usay use kar liya. var ke mamle mein JavaScript variable ko upar le jati hai lekin uski value peeche chor deti hai. Is liye JavaScript kehti hai: "Mujhe pata hai aisa koi variable aane wala hai, lekin abhi uski value nahi pata (Undefined)".
+
+
+Redeclaration vs Reassignment
+Reassignment: Is mein computer memory mein koi naye variable ki jagah nahi banata. Jo purani jagah (address) hoti hai, bas wahan ja kar purani value mita kar nayi value likh deta hai.Redeclaration: Is mein computer memory ke andar ek bilkul naya variable create karta hai (bhalay naam same ho). Kuch suraton mein yeh purane variable ko memory se delete karta hai ya usay chupa deta hai.
+
+
+
+Loops => For Loop, While Loop, Do-while Loop
+Array

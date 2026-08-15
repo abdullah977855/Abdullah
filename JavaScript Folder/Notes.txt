@@ -1,0 +1,9 @@
+Array Method:
+
+push(): Adds one or more elements to the end of the array. Returns the new length.
+pop(): Removes the last element from the array. Returns that removed element.
+unshift(): Adds one or more elements to the start of the array. Returns the new length.
+shift(): Removes the first element from the array. Returns that removed element.
+splice(): Adds, removes, or replaces elements at any specific index. Returns an array of deleted items.
+indexOf(): Check element present in array : return index number.
+include(): Check Element present in array: return the true or false.

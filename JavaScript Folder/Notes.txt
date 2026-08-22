@@ -35,4 +35,7 @@ Math.abs(x): Minus (-) sign ko khatam karke hamesha positive value deta hai.
 Math.min(a, b, c...): Diye gaye numbers mein se sab se chota number nikalta hai.
 Math.max(a, b, c...): Diye gaye numbers mein se sab se bara number nikalta hai.
 Math.PI: Circle ki Pi value (~3.14159).
-Math.E: Euler's number (~2.718)
+Math.E: Euler's number (~2.718).
+Math.sign(x): Number ka sign batata hai: positive ho to 1, negative ho to -1, aur zero ho to 0 deta hai.
+Math.hypot(a, b...): Saare numbers ke squares ka sum karke uska square root nikalta hai (Pythagoras theorem ke liye best hai: \(\sqrt{a^{2}+b^{2}}\)).
+Math.exp(x): Yeh method \(e^{x}\) ki value nikalta hai. Yaani Euler's number (\(2.718\)) ko \(x\) baar multiply karta hai.

@@ -17,3 +17,22 @@ slice(start, end): Text ka ek hissa kaat kar nikalta hai. Is mein aap ulte numbe
 lastIndexOf(substring, start): Kisi word ki aakhri position batata hai agar woh text mein baar baar aa raha ho.
 charAt(index): Diye gaye index par kaun sa single letter maujood hai, woh batata hai.
 charCodeAt(index): Us position par maujood character ka Unicode (UTF-16) number batata hai
+
+Math Methods:
+
+.random() : 0 sy lekr 0.99 tk koi bhi number dyga.
+.round() : Yeh method check karta hai ke aapka number kis integer ke zyada kareeb (closest) hai.
+Agar point ke baad .5 ya us se bara number ho toh yeh uoper le jata hai.
+Agar point ke baad .5 se chota number ho toh yeh neeche le jata hai.
+Exact darmiyan me hai toh rule ke mutabiq uoper jayega
+.ceil(): Yeh method point ke baad kuch bhi ho, number ko hamesha agley (uoper wale) poore number par phenk deta hai.
+.floor(): Point ke baad chahe jitna bara number ho (jaise .99), yeh usko hamesha pichle (neeche wale) poore number par gira deta hai.
+.trunc(): Ye point (.) ke baad jitne bhi numbers hain, unko direct delete kar deta hai.Positive numbers mein Math.floor aur Math.trunc bilkul ek jaisa kaam karte hain, lekin Minus (Negative) numbers mein inka farq samajh aata hai:
+Math.pow(base, exponent): Kisi number ki power nikalne ke liye. (Note: Aaj kal modern JS mein power ke liye ** operator bhi use hota hai).
+Math.sqrt(x): Kisi number ka Square Root nikalta hai.
+Math.cbrt(x): Kisi number ka Cube Root nikalta hai.
+Math.abs(x): Minus (-) sign ko khatam karke hamesha positive value deta hai.
+Math.min(a, b, c...): Diye gaye numbers mein se sab se chota number nikalta hai.
+Math.max(a, b, c...): Diye gaye numbers mein se sab se bara number nikalta hai.
+Math.PI: Circle ki Pi value (~3.14159).
+Math.E: Euler's number (~2.718)

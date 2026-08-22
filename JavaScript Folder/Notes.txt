@@ -7,3 +7,13 @@ shift(): Removes the first element from the array. Returns that removed element.
 splice(): Adds, removes, or replaces elements at any specific index. Returns an array of deleted items.
 indexOf(): Check element present in array : return index number.
 include(): Check Element present in array: return the true or false.
+
+String Methods:
+
+toUpperCase(): Poore text ko BADE LETTERS (Capital) mein convert karta hai
+toLowerCase(): Poore text ko chhote letters (Small) mein convert karta hai
+indexOf(substring, start): Kisi character ya word ki pehli position (index) batata hai. Agar na mile toh -1 deta hai.
+slice(start, end): Text ka ek hissa kaat kar nikalta hai. Is mein aap ulte numbers (negative index jise -1) bhi de sakte hain jo peeche se counting karte hain.
+lastIndexOf(substring, start): Kisi word ki aakhri position batata hai agar woh text mein baar baar aa raha ho.
+charAt(index): Diye gaye index par kaun sa single letter maujood hai, woh batata hai.
+charCodeAt(index): Us position par maujood character ka Unicode (UTF-16) number batata hai

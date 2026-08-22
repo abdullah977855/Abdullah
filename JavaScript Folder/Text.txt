@@ -26,3 +26,9 @@ Reassignment: Is mein computer memory mein koi naye variable ki jagah nahi banat
 
 Loops => For Loop, While Loop, Do-while Loop
 Array
+
+Slice
+other use case of lastIndexOF()
+ASCI code
+JavaScript me kia kia chezen hoty hi all to all
+explain with detail

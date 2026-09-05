@@ -39,3 +39,17 @@ Math.E: Euler's number (~2.718).
 Math.sign(x): Number ka sign batata hai: positive ho to 1, negative ho to -1, aur zero ho to 0 deta hai.
 Math.hypot(a, b...): Saare numbers ke squares ka sum karke uska square root nikalta hai (Pythagoras theorem ke liye best hai: \(\sqrt{a^{2}+b^{2}}\)).
 Math.exp(x): Yeh method \(e^{x}\) ki value nikalta hai. Yaani Euler's number (\(2.718\)) ko \(x\) baar multiply karta hai.
+
+Date Object:
+avaScript mein Date object date aur time ke sath kaam karne ke liye istemal hota hai. Iske methods ko hum 4 main categories mein divide kar sakte hain: Get methods (time nikalne ke liye), Set methods (time badalny ke liye), Formatting methods (text mein convert karne ke liye), aur UTC methods (world time ke liye).
+
+
+Date Methods:
+getFullYear(): Ye aapko mukammal saal (Year) deta hai (jaise 2026).
+getMonth(): Ye mahina (Month) deta hai. Yaad rahe yeh 0 se 11 tak counting karta hai (0 ka matlab January aur 11 ka matlab December hai).
+getDate(): Ye mahine ki tareekh (Day of the month) deta hai (1 se 31 tak).
+getDay(): Ye hafte ka din (Day of the week) deta hai. Ye bhi 0 se 6 tak hota hai (0 ka matlab Sunday aur 6 ka matlab Saturday hai).
+getHours(): Ye ghante (Hours) deta hai (0 se 23 tak).
+getMinutes(): Ye minutes deta hai (0 se 59 tak).
+getSeconds(): Ye seconds deta hai (0 se 59 tak).
+getMilliseconds(): Ye milliseconds deta hai (0 se 999 tak).

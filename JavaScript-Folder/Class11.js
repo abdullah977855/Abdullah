@@ -29,12 +29,14 @@
 //     }
 // }
 let textArea = document.getElementById("textarea");
-function setDesign(event){
-    if(event === "bold"){
+let defaultFontSize = 12;
+function setDesign(event) {
+    if (event === "bold") {
         textArea.style.fontWeight = 'bold';
-    }else if(event === "italic"){
+    } else if (event === "italic") {
         textArea.style.fontStyle = 'italic';
-    }else if(event == "increase"){
-        
+    } else if (event == "increase") {
+        defaultFontSize = defaultFontSize + 1;
+        textArea.style.fontSize = defaultFontSize + "px";
     }
 }

@@ -34,5 +34,7 @@ function setDesign(event){
         textArea.style.fontWeight = 'bold';
     }else if(event === "italic"){
         textArea.style.fontStyle = 'italic';
+    }else if(event == "increase"){
+        
     }
 }

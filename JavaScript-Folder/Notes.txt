@@ -53,3 +53,8 @@ getHours(): Ye ghante (Hours) deta hai (0 se 23 tak).
 getMinutes(): Ye minutes deta hai (0 se 59 tak).
 getSeconds(): Ye seconds deta hai (0 se 59 tak).
 getMilliseconds(): Ye milliseconds deta hai (0 se 999 tak).
+
+
+DOM:
+Document Method:
+cCreateElement("tagName")

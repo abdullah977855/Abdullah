@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    input{
+        outline: none;
+    }
+</style>
+</head>
+<body>
+
+    <input type="text" id="input" placeholder="enter task name">
+    <button onclick="todo()" id="add">Add New todo</button>
+    <button style="display: none;" id="edit" onclick="updateTodo()">Update Todo</button>
+    <button id="deleteall">delete all</button>
+    <br/>
+    <br/>  
+    <input type="text" placeholder="Search item" id="search"/>  
+       
+    <ul id="display">
+
+    </ul>
+    
+
+    <script src="class13.js"></script>
+</body>
+</html>

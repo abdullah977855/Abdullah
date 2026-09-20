@@ -34,3 +34,11 @@ other use case of lastIndexOF()
 ASCI code
 JavaScript me kia kia chezen hoty hi all to all
 explain with detail
+
+
+
+
+Storage:
+Session Storage
+Local Storage
+Cookies

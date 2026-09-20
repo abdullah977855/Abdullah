@@ -57,4 +57,20 @@ getMilliseconds(): Ye milliseconds deta hai (0 se 999 tak).
 
 DOM:
 Document Method:
-cCreateElement("tagName")
+document.write('text/html')Kaam: Direct browser window par kuch bhi likhne ya HTML content insert karne ke liye (zyadatar testing ke liye use hota hai).
+document.getElementById('id')Kya target karta hai: Kisi specific ID wale element ko. Kya return karta hai: Sirf ek element object.
+document.querySelector('selector')Kya target karta hai: CSS selector (id, class, ya tag) ke mutabik sab se pehle aane wale element ko.Kya return karta hai: Sirf ek element object.
+document.querySelectorAll('selector')Kya target karta hai: CSS selector se match hone wale saare elements ko.Kya return karta hai: Ek NodeList (ye array jaisa hota hai jis par aap forEach loop chala sakte hain).
+document.getElementsByClassName('class-name')Kya target karta hai: Us class name wale saare elements ko.Kya return karta hai: Ek HTMLCollection (elements ka collection).
+document.getElementsByTagName('tag-name')Kya target karta hai: Us HTML tag (jaise p, div, button) wale saare elements ko.Kya return karta hai: Ek HTMLCollection (elements ka collection).
+document.createTextNode()Kya banata hai: Yeh sirf sada text banata hai (jaise "Hello World"). Iska koi HTML tag nahi hota.Umeed: Is par aap koi style, id, ya class direct apply nahi kar sakte kyunki yeh koi HTML tag nahi hai.Asaan misal: Yeh us dabbe ke andar rakhne wala samaan hai.
+document.addEventListener('event', function)Kaam: Pure document par koi event (jaise DOMContentLoaded ya click) sunne aur uspar action lene ke liye use hota hai.
+.createElement("tagName"): Kaam: Ek naya HTML element (jaise div, p, button) memory me create karta hai.
+
+DOM Insertion:
+appendChild(): sirf ek waqt me ek hi HTML element ko insert karta hai aur text par error deta hai.
+append(): ek sath multiple elements aur plain text dono ko insert kar sakta hai
+prepend(): Kya karta hai: Yeh aapke naye element ko kisi parent element ke sabse shuru me (start par) jod deta hai.Syntax: parent.prepend(newElement);
+before(): Kya karta hai: Yeh naye element ko target element ke theek pehle (outside, uske upar) insert karta hai. Yaani yeh use sibling (bhai) bana deta hai, child nahi.Syntax: targetElement.before(newElement);
+after(): Kya karta hai: Yeh naye element ko target element ke theek baad (outside, uske neeche) insert karta hai.Syntax: targetElement.after(newElement);
+insertAdjacentHTML(): (Sabse Fast aur Powerful Method)Yeh method element banane aur insert karne ka kaam ek sath kar deta hai. Isme aapko alag se createElement ya innerText nahi likhna parta, balki aap direct HTML ki string likh dete hain.Iske paas 4 positions hoti hain:beforebegin: Target element ke theek pehle (bilkul before() ki tarah).afterbegin: Target element ke andar, sabse shuru me (bilkul prepend() ki tarah).beforeend: Target element ke andar, sabse aakhri me (bilkul append() ki tarah).afterend: Target element ke theek baad (bilkul after() ki tarah).

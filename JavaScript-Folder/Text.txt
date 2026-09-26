@@ -23,6 +23,8 @@ Redeclaration vs Reassignment
 Reassignment: Is mein computer memory mein koi naye variable ki jagah nahi banata. Jo purani jagah (address) hoti hai, bas wahan ja kar purani value mita kar nayi value likh deta hai.Redeclaration: Is mein computer memory ke andar ek bilkul naya variable create karta hai (bhalay naam same ho). Kuch suraton mein yeh purane variable ko memory se delete karta hai ya usay chupa deta hai.
 
 
+DOM:
+Element create karne aur usme text dalne ke baad, usko HTML page (DOM structure) par dikhane ke amal ko DOM Insertion ya Appending Elements kehte hain.
 
 Loops => For Loop, While Loop, Do-while Loop
 Array
@@ -32,3 +34,11 @@ other use case of lastIndexOF()
 ASCI code
 JavaScript me kia kia chezen hoty hi all to all
 explain with detail
+
+
+
+
+Storage:
+Session Storage
+Local Storage
+Cookies

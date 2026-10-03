@@ -74,3 +74,21 @@ prepend(): Kya karta hai: Yeh aapke naye element ko kisi parent element ke sabse
 before(): Kya karta hai: Yeh naye element ko target element ke theek pehle (outside, uske upar) insert karta hai. Yaani yeh use sibling (bhai) bana deta hai, child nahi.Syntax: targetElement.before(newElement);
 after(): Kya karta hai: Yeh naye element ko target element ke theek baad (outside, uske neeche) insert karta hai.Syntax: targetElement.after(newElement);
 insertAdjacentHTML(): (Sabse Fast aur Powerful Method)Yeh method element banane aur insert karne ka kaam ek sath kar deta hai. Isme aapko alag se createElement ya innerText nahi likhna parta, balki aap direct HTML ki string likh dete hain.Iske paas 4 positions hoti hain:beforebegin: Target element ke theek pehle (bilkul before() ki tarah).afterbegin: Target element ke andar, sabse shuru me (bilkul prepend() ki tarah).beforeend: Target element ke andar, sabse aakhri me (bilkul append() ki tarah).afterend: Target element ke theek baad (bilkul after() ki tarah).
+
+Events:
+click: 	Jab user kisi element par (jaise button ya link) click karta hai.
+dblclick: Jab user short time mein do (2) baar click karta hai.
+mousedown: 	Jab user mouse ka button niche dabata hai (click mukammal hone se pehle).
+mouseup: Jab user mouse ka dabaya hua button chhorta (release) hai.
+contextmenu: Jab user right-click karta hai (menu khulne se pehle).
+keydown: Jab keyboard ki koi bhi key dabai jati hai (chahe woh letter ho, Shift ho ya Enter).
+keyup: Jab user dabai hui key ko chhorta (release) hai.
+focus: Jab user kisi input box ke andar click karta hai (field active hoti hai).
+input: Jab user input box mein kuch bhi type ya delete karta hai (har ek character par).
+change: Jab user value badal kar box se bahar click kare, ya dropdown mein koi naya option select kare.
+blur: Jab user input box se bahar kahin bhi click kar de (chahe value badli ho ya na badli ho).
+submit: Jab user pure form ka data bhejne ke liye Submit button dabaye ya Enter press kare.
+DOMContentLoaded: Sirf HTML ready hone par chalta hai (Tezi se kaam shuru karne ke liye). document object pr lgta hy.
+load: Har cheez (Images) load hone ke baad chalta hai (Loader hatane ke liye). window object pr lgta hy.
+scroll: Page ko upar/neeche move karne par chalta hai (Sticky header ya scroll effects ke liye).window object pr lgta hy.
+resize: Screen ka size badalne par chalta hai (Responsive adjustments ke liye).window object pr lgta hy.

@@ -1,0 +1,43 @@
+
+The Event Loop & Execution Context
+
+JS background me kaam kaise karti hai, isko samajhne ke liye 4 cheezein zaroori hain:
+• Call Stack: Yahan aapka normal code line-by-line execute hota hai. Jo function pehle aata hai, wo pehle chalta hai.
+• Web APIs: Browser ki di hui powers (jaise setTimeout, Fetch API, DOM Events). Jab koi time-taking kaam aata hai, JS usko Web API ke paas bhej deti hai aur khud agli line par chali jaati hai.
+• Callback Queue / Microtask Queue: Jab Web API apna kaam khatam kar leti hai (maslan 3 seconds poore ho gaye ya server se data aa gaya), to wo code is queue (line) me aakar khra ho jata hai.
+• Event Loop: Iska kaam sirf itna hai ke ye check karta hai: "Kya Call Stack khali hai?" Agar Call Stack bilkul khali ho, to ye Queue se kaam utha kar Stack me daal deta hai taake wo run ho sake.
+
+
+
+Synchronous Kya Hai?
+
+Synchronous ka matlab hota hai "Ek ke baad ek".
+• Rule: Jab tak pehla kaam poora khatam nahi hoga, aap doosra kaam shuru nahi kar sakte.
+• Natija: Agar koi ek kaam bohot bada hai aur wo bohot zyada waqt le raha hai, to aapka poora din ruk jayega. Aap aage koi kaam nahi kar sakenge. Aap wahan block ho jayenge.
+
+
+
+Asynchronous Kya Hai?
+
+Asynchronous ka matlab hota hai "Sath sath chalna".
+• Rule: Agar koi kaam bohot bada hai aur usme zyada waqt lagna hai, to aap usko shuru karke chhor dete hain. Jab tak wo kaam peeche chal raha hota hai, aap agla kaam shuru kar dete hain. Aap wahan rukte nahi hain.
+• Natija: Aapka waqt zaya nahi hota. Aapka koi bhi kaam rukta nahi hai. Sab kaam smoothly aage barhte rehte hain (Non-blocking).
+
+
+
+1. JS Engine (Jo bohot seedha aur shareef hai)
+
+Browser ka yeh hissa sirf aur sirf JS ka code parhta hai aur chalta hai. Lekin is engine ki ek majboori hai: yeh Single-Threaded hai. Yani iske paas sirf ek hi haath hai kaam karne ke liye. Yeh ek waqt me ek hi line chala sakta hai. Agar aap isko koi lamba kaam de dein, to yeh us line par ruk jata hai jab tak wo kaam khatam na ho. Isko hum kehte hain Synchronous behavior.
+
+2. Web APIs (Browser ki apni extra powers)
+
+Browser ke paas JS engine ke alawa kuch apni extra powers bhi hoti hain jinhein Web APIs kehte hain. Yeh browser ka wo hissa hai jo multitasking kar sakta hai, background me kaam chala sakta hai, aur internet se baatein kar sakta hai.
+
+🌟 Asal Khel (The Connection)
+
+Jab aap browser me JS ka code chalate hain, to dono mil kar kaam karte hain:
+1. JS Engine code ko line-by-line chalana shuru karta hai.
+2. Jaise hi koi aisa kaam aata hai jisme time lagna ho (jaise internet se data lana), to JS Engine kehta hai: "Bhai, mere paas to ek hi haath hai, agar main is kaam par ruk gaya to baqi code ruk jayega!"
+3. Phir JS Engine wo kaam Browser ke doosre hisse (Web APIs) ko pakda deta hai ke "Tum ise background me chalao."
+4. Browser us kaam ko background me chalata rehta hai, aur JS Engine foran aage barh kar agli lines ko chalane lag jata hai.
+Yahi wajah hai ke hum kehte hain ke JS khud synchronous hai (kyunki uska engine ek waqt me ek hi kaam karta hai), lekin browser isko asynchronous banne me madad karta hai.
